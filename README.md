@@ -1,1 +1,1 @@
-# Bijouterie-l-gance
+# Bijouterie Élégance
