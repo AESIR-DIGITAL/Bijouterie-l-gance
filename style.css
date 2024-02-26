@@ -1,0 +1,187 @@
+/* Reset de base et styles globaux */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+header {
+    background-color: #007bff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px 0;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #002f61;
+}
+
+#hamburger img {
+    cursor: pointer;
+}
+
+#about h3 {
+    font-size: 24px; 
+    color: #333; 
+    margin-top: 30px; 
+    margin-bottom: 15px; 
+}
+
+#about p {
+    font-size: 16px; 
+    color: #666; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+    text-align: justify; 
+}
+
+#about {
+    background-color: #f9f9f9; 
+    padding-right: 80px;
+    padding-left: 80px;
+    border-radius: 8px; 
+}
+
+
+/* Styles pour la section des produits et les filtres */
+.filters {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.filter-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styles pour les cartes produit */
+.product-card {
+    max-width: 300px; 
+    margin: 15px auto; 
+    padding: 20px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+    max-width: 100%; 
+    max-height: 200px; 
+    object-fit: cover; 
+    border-radius: 4px; 
+}
+
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-card h3, .product-card p, .product-card button {
+    padding: 15px;
+}
+
+/* Modal Lightbox pour les détails du produit */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaaaaa;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Responsive Grid pour les produits */
+@media (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: center;
+        gap: 20px;
+        padding: 0 20px;
+    }
+}
+
+#contact i {
+    margin-right: 8px;
+}
+
+.yellowtail-regular {
+    font-family: "Yellowtail", cursive;
+    font-size: 35px; 
+}
+
+

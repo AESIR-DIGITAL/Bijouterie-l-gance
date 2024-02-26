@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bijouterie Élégance</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="text-center py-5">
+        <h1 class="yellowtail-regular">Bijouterie Élégance</h1>
+        <nav id="navbar" class="hidden md:flex justify-center gap-4">
+            <a href="#about">La Bijouterie</a>
+            <a href="#products">Nos Produits</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div id="hamburger" class="md:hidden flex justify-end mr-4">
+            <img src="image/hamburger_icon.svg" alt="Menu" width="30" height="30">
+        </div>
+    </header>
+    <main>
+        <section id="about" class="text-center py-5">
+            <h2 class="yellowtail-regular">À propos de nous</h2>
+
+            <h3 class="yellowtail-regular">Une tradition d'excellence et de raffinement.</h3>
+
+            <p>Depuis [année de fondation], [Nom de la Bijouterie] incarne l'excellence dans l'art de la bijouterie. Située au cœur de [ville ou quartier], notre maison est le symbole d'un savoir-faire transmis de génération en génération, alliant techniques traditionnelles et innovations contemporaines.</p>
+
+            <h3 class="yellowtail-regular">Collections Uniques pour Moments Inoubliables</h3>
+
+            <p>Découvrez nos collections exclusives, où chaque pièce raconte une histoire. De l'éclat intemporel des diamants aux couleurs vibrantes des pierres précieuses, nos créations sont conçues pour capturer et sublimer la beauté de l'instant. Bagues de fiançailles, colliers éclatants, bracelets délicats ou boucles d'oreilles sophistiquées, chaque bijou est une œuvre d'art façonnée avec passion et précision.</p>
+
+            <h3 class="yellowtail-regular">Savoir-Faire Exceptionnel</h3>
+
+            <p>Chez [Nom de la Bijouterie], nous croyons en l'importance des détails. Nos artisans joailliers, héritiers de techniques ancestrales, mettent leur expertise au service de la création de bijoux d'exception. Chaque pièce est le fruit d'un travail minutieux, reflet d'une quête incessante de perfection.</p>
+
+            <h3 class="yellowtail-regular">Une Expérience Personnalisée</h3>
+
+            <p>Nous savons que chaque bijou est porteur d'une émotion, d'un souvenir. C'est pourquoi nous offrons un service de personnalisation pour que votre bijou soit véritablement unique. Nos conseillers sont à votre écoute pour vous accompagner dans la création de votre pièce sur-mesure, un reflet fidèle de votre histoire personnelle.</p>
+
+            <h3 class="yellowtail-regular">Engagés envers la Qualité et la Durabilité</h3>
+
+            <p>Fidèles à nos valeurs, nous nous engageons à ne sélectionner que les matériaux les plus nobles, tout en respectant des pratiques éthiques et durables. Notre quête de l'excellence est également une quête de responsabilité, pour que beauté rime avec intégrité.</p>
+
+            <h3 class="yellowtail-regular">Visitez-Nous</h3>
+
+            <p>Parcourez notre site pour découvrir nos collections, en savoir plus sur notre histoire et nos valeurs, ou prendre rendez-vous dans notre boutique. Chez [Nom de la Bijouterie], nous sommes impatients de vous accueillir et de partager avec vous notre passion pour la joaillerie d'exception.</p>
+
+        </section>
+
+
+        <section id="products" class="py-5">
+            <h2 class="yellowtail-regular">Nos Produits</h2>
+            <div class="filters">
+                <button class="filter-btn" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="rings">Bagues</button>
+                <button class="filter-btn" data-filter="necklaces">Colliers</button>
+                <button class="filter-btn" data-filter="bracelets">Bracelets</button>
+                <!-- Ajoutez plus de filtres selon vos catégories de produits -->
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Exemple de carte produit -->
+                <div class="product-card rings" onclick="openModal('Nom du Produit', 'Description du produit...', 'image/lien_vers_image_produit.jpg')">
+                    <img src="image/lien_vers_image_produit.jpg" alt="Nom du Produit">
+                    <h3 class="yellowtail-regular">Nom du Produit</h3>
+                    <p>Description du produit...</p>
+                </div>
+
+                <div class="product-card rings" onclick="openModal('Nom du Produit', 'Description du produit...', 'image/lien_vers_image_produit.jpg')">
+                    <img src="image/lien_vers_image_produit.jpg" alt="Nom du Produit">
+                    <h3 class="yellowtail-regular">Nom du Produit</h3>
+                    <p>Description du produit...</p>
+                </div>
+
+                <div class="product-card rings" onclick="openModal('Nom du Produit', 'Description du produit...', 'image/lien_vers_image_produit.jpg')">
+                    <img src="image/lien_vers_image_produit.jpg" alt="Nom du Produit">
+                    <h3 class="yellowtail-regular">Nom du Produit</h3>
+                    <p>Description du produit...</p>
+                </div>
+
+                <div class="product-card rings" onclick="openModal('Nom du Produit', 'Description du produit...', 'image/lien_vers_image_produit.jpg')">
+                    <img src="image/lien_vers_image_produit.jpg" alt="Nom du Produit">
+                    <h3 class="yellowtail-regular">Nom du Produit</h3>
+                    <p>Description du produit...</p>
+                </div>
+
+                <div class="product-card rings" onclick="openModal('Nom du Produit', 'Description du produit...', 'image/lien_vers_image_produit.jpg')">
+                    <img src="image/lien_vers_image_produit.jpg" alt="Nom du Produit">
+                    <h3 class="yellowtail-regular">Nom du Produit</h3>
+                    <p>Description du produit...</p>
+                </div>
+
+                <div class="product-card rings" onclick="openModal('Nom du Produit', 'Description du produit...', 'image/lien_vers_image_produit.jpg')">
+                    <img src="image/lien_vers_image_produit.jpg" alt="Nom du Produit">
+                    <h3 class="yellowtail-regular">Nom du Produit</h3>
+                    <p>Description du produit...</p>
+                </div>
+
+                <div class="product-card rings" onclick="openModal('Nom du Produit', 'Description du produit...', 'image/lien_vers_image_produit.jpg')">
+                    <img src="image/lien_vers_image_produit.jpg" alt="Nom du Produit">
+                    <h3 class="yellowtail-regular">Nom du Produit</h3>
+                    <p>Description du produit...</p>
+                </div>
+
+                <div class="product-card rings" onclick="openModal('Nom du Produit', 'Description du produit...', 'image/lien_vers_image_produit.jpg')">
+                    <img src="image/lien_vers_image_produit.jpg" alt="Nom du Produit">
+                    <h3 class="yellowtail-regular">Nom du Produit</h3>
+                    <p>Description du produit...</p>
+                </div>
+
+                <div class="product-card rings" onclick="openModal('Nom du Produit', 'Description du produit...', 'image/lien_vers_image_produit.jpg')">
+                    <img src="image/lien_vers_image_produit.jpg" alt="Nom du Produit">
+                    <h3 class="yellowtail-regular">Nom du Produit</h3>
+                    <p>Description du produit...</p>
+                </div>
+
+                <div class="product-card rings" onclick="openModal('Nom du Produit', 'Description du produit...', 'image/lien_vers_image_produit.jpg')">
+                    <img src="image/lien_vers_image_produit.jpg" alt="Nom du Produit">
+                    <h3 class="yellowtail-regular">Nom du Produit</h3>
+                    <p>Description du produit...</p>
+                </div>
+                <!-- Répéter pour d'autres produits -->
+            </div>
+        </section>
+        <section id="contact" class="text-center py-5">
+            <h2><i class="fas fa-envelope"></i> Contactez-nous</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Adresse de la boutique</p>
+            
+        </section>
+    </main>
+    <footer class="text-center py-3">
+        © 2024 Bijouterie Élégance
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="Product image">
+            <h3 id="modal-title">Nom du produit</h3>
+            <p id="modal-description">Description du produit...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
